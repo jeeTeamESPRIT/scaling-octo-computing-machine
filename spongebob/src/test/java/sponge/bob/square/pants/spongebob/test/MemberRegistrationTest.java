@@ -16,7 +16,7 @@
  */
 package sponge.bob.square.pants.spongebob.test;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 import java.util.logging.Logger;
 
@@ -24,15 +24,16 @@ import javax.inject.Inject;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
-import sponge.bob.square.pants.spongebob.model.Member;
-import sponge.bob.square.pants.spongebob.service.MemberRegistration;
-import sponge.bob.square.pants.spongebob.util.Resources;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import sponge.bob.square.pants.spongebob.model.Member;
+import sponge.bob.square.pants.spongebob.service.MemberRegistration;
+import sponge.bob.square.pants.spongebob.util.Resources;
 
 @RunWith(Arquillian.class)
 public class MemberRegistrationTest {
@@ -60,7 +61,7 @@ public class MemberRegistrationTest {
         newMember.setPhoneNumber("2125551234");
         memberRegistration.register(newMember);
         newMember.setId(null);
-        assertNotNull(newMember.getId());
+        fail("N'importe quoi!");
         log.info(newMember.getName() + " was persisted with id " + newMember.getId());
         
         
