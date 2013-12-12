@@ -1,7 +1,6 @@
 package sponge;
 
-import static org.junit.Assert.fail;
-
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,8 +13,8 @@ public class TestKaskroute {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testKool() {
+		Assert.assertEquals("gerrr", kaskroute.kool("kaftegi"));
 	}
 
 }
