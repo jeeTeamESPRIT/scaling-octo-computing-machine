@@ -220,6 +220,20 @@
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
                 <version>${version.jboss.maven.plugin}</version>
+                 <executions>
+                <execution>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>deploy</goal>
+                    </goals>    <!-- only remote server needs-->
+                <configuration>
+                   <hostname>41.226.11.249</hostname>
+                   <port>9999</port>
+                    <username>mgm</username>
+                    <password>mgm123</password>
+                </configuration>
+                </execution>    
+            </executions>
             </plugin>
         </plugins>
     </build>
