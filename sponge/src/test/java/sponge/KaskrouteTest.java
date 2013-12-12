@@ -13,14 +13,11 @@ public class KaskrouteTest {
 		kaskroute = new Kaskroute();
 	}
 
-	@Test
-	public void testKool() {
-		Assert.assertEquals("gerrr", kaskroute.kool("kaftegi"));
-	}
+	
 	
 	@Test
 	public void testKool1() {
-		Assert.assertEquals("gerrr", kaskroute.kool("kaftegi"));
+		Assert.assertEquals("mabannou", kaskroute.kool("kaftegi"));
 	}	
 
 }
