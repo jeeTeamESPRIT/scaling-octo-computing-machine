@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class KaskrouteTest {
+	
 	private Kaskroute kaskroute;
 
 	@Before
@@ -16,5 +17,10 @@ public class KaskrouteTest {
 	public void testKool() {
 		Assert.assertEquals("gerrr", kaskroute.kool("kaftegi"));
 	}
+	
+	@Test
+	public void testKool1() {
+		Assert.assertEquals("gerrr", kaskroute.kool("kaftegi"));
+	}	
 
 }
